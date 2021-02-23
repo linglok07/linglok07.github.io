@@ -22,7 +22,7 @@
 </head>
 
 <body onload="main()">
-  <!-- View on GitHub ribbon -->
+
 
   <!-- Explanation for those who do not have JavaScript enabled -->
   <noscript>
@@ -42,7 +42,16 @@
     <a href="https://linglok07.github.io/linglok07.github.io"><button>Lock a link</button></a>
   </div>
 
-  <h1>Decrypt Link Protecter URLs</h1>
+  <h1>Decrypt Link Protect URLs</h1>
+
+  <div class="form">
+    <label for="encrypted-url">encrypted url</label>
+    <input type="url" id="encrypted-url" oninput="document.querySelector('.alert').style.opacity = 0" />
+    <label for="password">password</label>
+    <input type="password" id="password" />
+    <button onclick="onDecrypt()">Decrypt</button>
+    <p class="alert">INVISIBLE</p>
+  </div>
 
   <hr />
 
